@@ -21,5 +21,7 @@ GLOBAL
 body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--red);
+    background-image: url(../images/bg-intro-desktop.png);
 }
 
