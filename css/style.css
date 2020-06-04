@@ -19,9 +19,47 @@ GLOBAL
 }
 
 body {
+    color: #fff;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     background-color: var(--red);
     background-image: url(../images/bg-intro-desktop.png);
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+/* Selects all child div's in .container */
+.container > div {
+    /* Applies flex-grow to both div's to apply equal space in container. */
+    flex: 1;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blue-box {
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.box button {
+    width: 100%;
+}
