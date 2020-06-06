@@ -1,5 +1,5 @@
 /* =====================================
-GLOBAL 
+GLOBAL / IMPORTS
 ======================================== */
 :root {
 /* COLORS */
@@ -40,8 +40,13 @@ body {
 .container > div {
     /* Applies flex-grow to both div's to apply equal space in container. */
     flex: 1;
+    padding: 0 20px;
 }
 
+
+/* =====================================
+BOX 
+======================================== */
 .box {
     background-color: #fff;
     border-radius: 5px;
@@ -62,4 +67,12 @@ body {
 
 .box button {
     width: 100%;
+}
+
+
+/* =====================================
+FORM 
+======================================== */
+.form-control {
+    margin-bottom: 20px;
 }
