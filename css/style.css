@@ -76,3 +76,9 @@ FORM
 .form-control {
     margin-bottom: 20px;
 }
+
+.form-control input {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+}
