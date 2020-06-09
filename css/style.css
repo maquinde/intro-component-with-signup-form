@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: 100vh;
 }
 
@@ -49,7 +49,7 @@ BOX
 ======================================== */
 .box {
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px;
     text-align: center;
 }
@@ -61,24 +61,32 @@ BOX
 
 .blue-box {
     background-color: hsl(248, 32%, 49%);
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 30px;
 }
 
 .box button {
     width: 100%;
+    padding: 15px 0;
+    background-color: var(--green);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 10px;
 }
-
 
 /* =====================================
 FORM 
 ======================================== */
 .form-control {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-control input {
+    border-radius: 5px;
     position: relative;
-    padding: 20px 0;
+    padding: 15px 0;
     width: 100%;
 }
