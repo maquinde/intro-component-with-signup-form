@@ -45,6 +45,19 @@ body {
 
 
 /* =====================================
+LEFT 
+======================================== */
+.left h1 {
+    font-size: 45px;
+}
+
+.left p {
+    font-size: 15;
+    line-height: 25px;
+}
+
+
+/* =====================================
 BOX 
 ======================================== */
 .box {
@@ -56,22 +69,21 @@ BOX
 
 .box p {
     font-size: 14px;
-    font-weight: 400;
 }
 
 .blue-box {
-    background-color: hsl(248, 32%, 49%);
+    background-color: var(--blue);
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .box button {
     width: 100%;
-    padding: 15px 0;
+    padding: 15px;
     background-color: var(--green);
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 5px;
     border-style: none;
     margin-bottom: 10px;
@@ -81,12 +93,46 @@ BOX
 FORM 
 ======================================== */
 .form-control {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .form-control input {
     border-radius: 5px;
-    position: relative;
+    border: 1px solid var(--grayish-blue);
     padding: 15px 0;
     width: 100%;
+}
+
+.form-control input:active {
+    /* CHANGE TO BLACK */
+}
+
+::placeholder {
+    font-size: 13px;
+    /* MAKE PLACEHOLDER HAVE SPACE ON LEFT */
+}
+
+.box small {
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+}
+
+.box small a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+/* ERRORS */
+.form-control img {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 25px;
+}
+
+.form-control.error input{
+    border: 2px solid var(--red);
+    border-radius: 5px;
 }
