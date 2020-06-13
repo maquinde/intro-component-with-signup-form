@@ -1,6 +1,9 @@
 /* =====================================
-GLOBAL / IMPORTS
+IMPORTS / GLOBAL
 ======================================== */
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
 /* COLORS */
     /* PRIMARY */
@@ -13,8 +16,36 @@ GLOBAL / IMPORTS
     /* NEUTRAL */
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
-
-/* TYPOGRAPHY */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 }
 
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--red);
+    background-image: url(../images/bg-intro-desktop.png);
+    color: #fff;
+}
+
+
+/* =====================================
+LAYOUT
+======================================== */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container > div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+/* =====================================
+BOX
+======================================== */
