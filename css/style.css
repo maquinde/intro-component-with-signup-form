@@ -18,6 +18,16 @@ IMPORTS / GLOBAL
     --grayish-blue: hsl(246, 25%, 77%);
 }
 
+html {
+    box-sizing: border-box;
+  }
+
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+
 body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -51,19 +61,20 @@ BOX
 ======================================== */
 .box {
     background-color: #fff;
-    /* padding: 30px 40px; */
+    padding: 10px;
+    padding: 30px 40px;
 }
 
-
-/* =====================================
-FORM
-======================================== */
 .blue-box {
     background-color: var(--blue);
     padding: 10px;
     text-align: center;
 }
 
+
+/* =====================================
+FORM
+======================================== */
 .form-control {
     margin-bottom: 20px;
     margin: 0 auto;
@@ -72,6 +83,8 @@ FORM
 
 .form-control input {
     padding: 10px 20px;
+    width: 100%;
+
 }
 
 
