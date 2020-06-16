@@ -173,4 +173,12 @@ ERROR
         text-align: center;
         margin-bottom: 30px;
     }
+
+    .form-control input {
+        padding: 20px;
+    }
+
+    .error-icon {
+        right: 25px;
+    }
 }
