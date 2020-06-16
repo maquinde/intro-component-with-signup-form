@@ -121,6 +121,11 @@ button {
     font-weight: 500;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 85%, 62%);
+}
+
 .terms {
     color: var(--grayish-blue);
     font-size: 14px;
