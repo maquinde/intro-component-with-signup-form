@@ -119,11 +119,12 @@ button {
     padding: 20px;
     font-size: 14px;
     font-weight: 500;
+    transition: background-color 0.5s ease;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: hsl(154, 85%, 62%);
+    background-color: hsl(154, 71%, 61%);
 }
 
 .terms {
