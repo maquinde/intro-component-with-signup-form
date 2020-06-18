@@ -1,35 +1,37 @@
-const errorIcons = document.querySelectorAll('.error-icon');
-const errorSmalls = document.querySelectorAll('.error-small');
-const formControls = document.querySelectorAll('.form-control');
+const form = document.querySelector('#form');
 const button = document.querySelector('#submit');
+
+button.addEventListener('click', checkData);
+
+
+
 
 function checkData(event){
     event.preventDefault();
-    
-    const inputs = document.querySelectorAll('.inputs');
 
-    for(input of inputs){
-        
-        if(!input.value){
+    const fname = form['fname'].value;
+    const lname = form['lname'].value;
+    const email = form['email'].value;
+    const pass = form['pass'].value;
 
-            for(item of errorSmalls){
-                item.style.display = 'block';
-            }
-
-            for(item of errorIcons){
-                item.style.display = 'block';
-            }
-        }
+    if(fname === ''){
+        //turn on error-icon and error-small. add error-border to form-control
+    } else {
+        //create function to remove classes or turn stuff off
     }
-
-    
-
-
-
     
 }
 
 
+function addError(){
+    
+}
 
+function removeError(){
 
-button.addEventListener('click', checkData);
+}
+
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
