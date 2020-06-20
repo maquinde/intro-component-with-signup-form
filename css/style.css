@@ -146,13 +146,13 @@ button:hover {
 ERROR
 ======================================== */
 .error-icon {
-    display: none;
+    display: block;
     position: absolute;
     top: 18px;
     right: 35px;
 }
 
-.form-control.error-border {
+.error.error-border {
     outline: none;
     border: 3px solid var(--red);
     border-radius: 8px;
